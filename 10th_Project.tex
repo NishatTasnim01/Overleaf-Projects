@@ -1,0 +1,95 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage{graphicx} % Required for inserting images
+\usepackage{colortbl}
+
+\title{Table Formation}
+\author{Nishat Tasnim}
+\date{December 2023}
+\setlength{\extrarowheight}{10pt}
+
+\begin{document}
+
+\maketitle
+
+\tableofcontents
+\listoftables
+
+\section{Introduction}
+Table of Programming Language : \ref{tab:PyJava}
+
+\section{Data Tables}
+\subsection{Data Table 01}
+\begin{center}
+    \begin{tabular}{| c | c | c |}
+        \hline
+        \multicolumn{2}{|c|}{Marge} & c10\\
+        \hline
+        \hline
+        data & data & data  \\
+        \hline
+        12 & 13 & 14\\
+        \hline
+        A & B & C\\
+        \hline
+    \end{tabular}
+\end{center}
+
+\subsection{Data Table 02}
+\begin{center}
+    \begin{tabular}{| c | c | c |}
+        \hline
+        \multicolumn{2}{|c|}{Marge} & c10\\
+        \hline
+        \hline
+        \rowcolor{yellow}
+        data & data & data  \\
+        \hline
+        \rowcolor{green}
+        12 & 13 & 14\\
+        \hline
+        \rowcolor{red}
+        A & B & C\\
+        \hline
+    \end{tabular}
+\end{center}
+
+\subsection{Data Table 03}
+\begin{table}[h]
+    \centering
+    \begin{tabular}{|c|c|}
+        \hline
+        Python &  100\% Easy\\
+        \hline
+        Java & 100\% Hard\\
+        \hline
+    \end{tabular}
+    \caption{Programming Language}
+    \label{tab:PyJava}
+\end{table}
+
+\subsection{Data Table 04}
+\begin{table}[h]
+    \centering
+    \begin{tabular}{|c|c|c|}
+        \hline
+        \textbf{Category} & \textbf{Difficulty} & \textbf{Description} \\
+        \hline
+        Basics & Easy & Fundamentals of Python syntax and data types. \\
+        \hline
+        Advanced Topics & Moderate & More complex concepts like decorators and generators. \\
+        \hline
+        Web Development & Intermediate & Flask and Django frameworks for web development. \\
+        \hline
+        Data Science & Moderate & Libraries such as Pandas, NumPy, and Matplotlib. \\
+        \hline
+        Machine Learning & Difficult & Scikit-learn, TensorFlow, and PyTorch for ML applications. \\
+        \hline
+        Automation & Easy & Using Python for task automation and scripting. \\
+        \hline
+    \end{tabular}
+    \caption{Python Learning Path}
+    \label{tab:PythonLearningPath}
+\end{table}
+
+\end{document}

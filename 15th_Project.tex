@@ -1,0 +1,71 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage{amsthm}
+
+\newtheorem{theorem}{\textbf{Theorem}}
+\newtheorem{definition}{\textbf{Definition}}
+\newtheorem{lemma}{\textbf{Lemma}}
+\newtheorem{corollary}{\textbf{Corollary}}[theorem]
+%\newtheorem{corollary}[theorem]{Corollary}
+
+\begin{document}
+
+\section{Mathematical Statements:}
+
+\begin{theorem}[Pythagoras]\label{pythagoras}
+    The square of the hypotenuse of a right triangle is equal to the sum of the squares of the other two sides.
+\end{theorem}
+
+\begin{corollary}
+    In a right triangle, the square of the length of the hypotenuse (c) is equal to the sum of the squares of the lengths of the other two sides (a and b):
+    \[ c^2 = a^2 + b^2 \]
+\end{corollary}
+
+\begin{proof}
+    Let \(a\), \(b\), and \(c\) be the sides of a right triangle as described in Theorem~\ref{pythagoras}. The proof follows by the application of the Pythagorean theorem.
+\end{proof}
+
+\begin{definition}
+    A right triangle is a triangle in which one angle is a right angle (90 degrees).
+\end{definition}
+
+\begin{definition}
+    The hypotenuse of a right triangle is the side opposite the right angle.
+\end{definition}
+
+\begin{lemma}
+    In the context of Theorem~\ref{pythagoras}, the square of the hypotenuse is equal to the sum of the squares of the other two sides.
+\end{lemma}
+
+\section{Advanced Mathematics}
+
+\subsection{Number Theory}
+
+\begin{theorem}[Fermat's Last Theorem]\label{fermat}
+    No three positive integers \(a\), \(b\), and \(c\) satisfy the equation \(a^n + b^n = c^n\) for any integer value of \(n\) greater than 2.
+\end{theorem}
+
+\begin{corollary}
+    Fermat's Last Theorem implies that there are no whole number solutions to the equation \(x^3 + y^3 = z^3\).
+\end{corollary}
+
+\begin{proof}
+    The proof of Fermat's Last Theorem is complex and was not discovered until centuries after Fermat's death. It involves advanced mathematical concepts and is beyond the scope of this document.
+\end{proof}
+
+\subsection{Calculus}
+
+\begin{theorem}[Fundamental Theorem of Calculus]\label{ftc}
+    If \(f(x)\) is continuous on the interval \([a, b]\) and \(F(x)\) is an antiderivative of \(f(x)\), then
+    \[ \int_{a}^{b} f(x) \,dx = F(b) - F(a) \]
+\end{theorem}
+
+\begin{corollary}
+    The definite integral of a function \(f(x)\) over an interval \([a, b]\) can be computed by finding the antiderivative \(F(x)\) and evaluating it at the endpoints.
+\end{corollary}
+
+\begin{proof}
+    The proof involves the properties of antiderivatives and the concept of the accumulation of values over an interval.
+\end{proof}
+
+\end{document}

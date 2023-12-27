@@ -1,0 +1,87 @@
+\documentclass{article}
+\usepackage{graphicx} % Required for inserting images
+\usepackage[ruled,vlined]{algorithm2e}
+\usepackage{float}
+\usepackage{amsmath}
+
+\title{Algorithm Examples}
+\author{Nishat Tasnim}
+\date{December 2023}
+
+\begin{document}
+\maketitle
+
+\section{Basic Algorithms}
+\subsection{Basic Algorithm 01}
+
+\begin{algorithm}[H]
+\LinesNumbered
+\SetAlgoLined
+\caption{Basic Algorithm 01}
+    \KwIn{a, b, c}
+    \KwResult{Sum}
+    \KwData{1, 2, 4}
+    
+    \If{$a > 10$}{
+        print "a is greater than 10"\;
+    }
+    \ElseIf{$a < 100$}{
+        print "a is less than 100"\;
+    }
+    \Else{
+        print "a is neither greater than 10 nor less than 100"\;
+    }  
+
+    \While{$a > b$}{
+        print a\;
+        $a \leftarrow a + 1$\;
+    }
+
+    \For{int $a = 10$; $a < 30$; $a \leftarrow a + 1$}{
+        print "Statement 1"\;
+    }
+\end{algorithm}
+
+\subsection{Basic Algorithm 02}
+\begin{algorithm}[H]
+\LinesNumbered
+\SetAlgoLined
+\caption{Basic Algorithm 02}
+    \KwIn{x, y}
+    \KwResult{Product}
+    
+    $z \leftarrow x \times y$\;
+    print $z$\;
+\end{algorithm}
+
+\section{Advanced Algorithms}
+
+\subsection{Advanced Algorithm 01}
+\begin{algorithm}[H]
+\LinesNumbered
+\SetAlgoLined
+\caption{Advanced Algorithm 01}
+    \KwIn{array $A$}
+    \KwResult{Sorted array $A$}
+    
+    \For{int $i = 0$; $i < \text{length}(A)$; $i \leftarrow i + 1$}{
+        \For{int $j = 0$; $j < \text{length}(A) - 1$; $j \leftarrow j + 1$}{
+            \If{$A[j] > A[j + 1]$}{
+                swap($A[j]$, $A[j + 1]$)\;
+            }
+        }
+    }
+\end{algorithm}
+
+\subsection{Advanced Algorithm 02}
+\begin{algorithm}[H]
+\LinesNumbered
+\SetAlgoLined
+\caption{Advanced Algorithm 02}
+    \KwIn{Graph $G$}
+    \KwResult{Shortest path in $G$}
+    
+    Use Dijkstra's algorithm to find the shortest path\;
+\end{algorithm}
+
+\end{document}

@@ -1,0 +1,31 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage{url}
+\usepackage{hyperref}
+
+\title{Referencing}
+\author{Nishat Tasnim}
+\date{December 2023}
+
+\begin{document}
+
+Md Enayet Chowdhury \cite{chowdhury2017design}
+
+\begin{thebibliography}{9}
+    \bibitem{chowdhury2017design}
+    Md Enayet Chowdhury, \emph{Design and Analysis of Algorithms}, \textit{Journal of Algorithms}, Springer, 2017.
+
+    \bibitem{knuth1984texbook}
+    Donald E. Knuth, \emph{The \TeX book}, Addison-Wesley, 1984.
+
+    \bibitem{smith2005conference}
+    John Smith, \emph{A Great Conference Paper}, \textit{Proceedings of the International Conference on Research}, 2005.
+
+    \bibitem{examplewebsite}
+    Example Author, \emph{Example Website}, \url{https://www.google.com}, 2023.
+\end{thebibliography}
+
+\bibliographystyle{ieeetr}
+\bibliography{ref}
+
+\end{document}

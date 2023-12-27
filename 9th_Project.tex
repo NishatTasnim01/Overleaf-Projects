@@ -1,0 +1,103 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage{graphicx} % Required for inserting images
+\usepackage{subcaption}
+
+\title{Figures}
+\author{Nishat Tasnim}
+\date{December 2023}
+
+\begin{document}
+\maketitle
+\section{Python Cheat Sheets :}
+For Page 01 Information Click On : \ref{fig:01}\\
+For Page 02 Information Click On : \ref{fig:02}\\
+Datacamp Cheat Sheet Information : \ref{fig:03}
+
+\listoffigures
+
+
+\newpage
+\begin{center}
+    \includegraphics[scale=0.16]{research.png}
+\end{center}
+
+\begin{center}
+    \includegraphics[scale=0.8]{Difference Between All Papers.png}
+\end{center}
+
+\begin{center}
+    \includegraphics[scale=0.35]{Format and Citation - Difference between Conference Paper and Journal Paper.jpg}
+\end{center}
+
+\begin{center}
+    \includegraphics[scale=0.15]{Difference-between-research-paper-and-Journal-paper.png}
+\end{center}
+
+\newpage
+\begin{figure}[h]
+    \centering
+    \includegraphics[scale=0.15]{research.png}
+    \caption{Research Paper Writing}
+\end{figure}
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[scale=0.8]{Difference Between All Papers.png}
+    \caption{Difference Between All Papers}
+\end{figure}
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[scale=0.35]{Format and Citation - Difference between Conference Paper and Journal Paper.jpg}
+    \caption{Format and Citation - Difference between Conference Paper and Journal Paper}
+\end{figure}
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[scale=0.15]{Difference-between-research-paper-and-Journal-paper.png}
+    \caption{Difference Between Research Paper and Journal Paper}
+\end{figure}
+
+
+\newpage
+\begin{figure}
+    \centering
+    \includegraphics[scale=0.25]{Python3_cheat_sheet_1.png}
+    \caption{Python 3 Beginner's Reference Cheat Sheet Page - 01}
+    \label{fig:01}
+\end{figure}
+
+\begin{figure}
+    \centering
+    \includegraphics[scale=0.25]{Python3_cheat_sheet_2.png}
+    \caption{Python 3 Beginner's Reference Cheat Sheet Page - 02}
+    \label{fig:02}
+\end{figure}
+
+\begin{figure}
+    \centering
+    \includegraphics[scale=0.1]{Python_Basics_Cheat_Sheet.pdf}
+    \caption{Datacamp Python Cheat Sheet for Beginners}
+    \label{fig:03}
+\end{figure}
+
+\newpage
+\begin{figure}[h]
+    \centering
+    \captionsetup{justification=centering}
+    \caption{Python \& Data Science}
+    
+    \begin{subfigure}{0.4\textwidth}
+        \centering
+        \includegraphics[width=1\linewidth, height=8cm]{Python_Roadmap.png}
+        \caption{Python Roadmap}
+    \end{subfigure}
+    \begin{subfigure}{0.4\textwidth}
+        \centering
+        \includegraphics[width=1\linewidth, height=8cm]{Data Scientist Roadmap.jpg}
+        \caption{Data Scientist Roadmap}
+    \end{subfigure}
+\end{figure}
+
+\end{document}
